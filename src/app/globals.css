@@ -120,3 +120,139 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Forms */
+
+/* Contenedor del formulario */
+.author-form {
+  @apply space-y-4 w-2/3 max-w-2xl mx-auto;
+}
+
+/* Inputs del formulario */
+.form-input {
+  @apply w-full p-2 border rounded bg-white text-black;
+}
+
+/* Botón de guardar */
+.btn-save {
+  @apply bg-green-500 hover:bg-green-600 text-black font-bold py-2 px-6 rounded disabled:bg-gray-300 block mx-auto;
+}
+
+
+/* CharacterItem */
+.character-item {
+  @apply flex flex-col items-center gap-2 shrink-0 w-[100px];
+}
+
+.character-image {
+  @apply rounded-md;
+}
+
+.character-name {
+  @apply text-center whitespace-nowrap;
+  font-size: 13px;
+}
+
+.character-loading {
+  @apply shrink-0 w-[180px] h-[56px] rounded-md bg-gray-100;
+}
+
+.character-error {
+  @apply text-red-600 shrink-0;
+}
+
+/* EpisodeCard */
+.episode-card {
+  @apply flex-1 min-w-0 rounded-lg border border-gray-200 p-2;
+}
+
+.episode-title {
+  @apply text-2xl font-bold  ;
+}
+
+.episode-date {
+  @apply mt-1 ;
+}
+
+.episode-characters {
+  @apply mt-4 flex flex-row gap-4 overflow-x-auto py-2;
+}
+
+.episode-buttons {
+  @apply mt-4 flex gap-2;
+}
+
+.btn-favorite-add {
+  @apply  rounded-md bg-blue-600 px-3 py-2 text-white hover:bg-blue-700;
+}
+
+.btn-favorite-remove {
+  @apply rounded-md bg-red-600 px-3 py-2 text-white hover:bg-red-700;
+}
+
+
+/* EpisodesList */
+.episodes-section {
+  @apply flex flex-col gap-4;
+}
+
+.episodes-title {
+  @apply text-xl font-bold;
+}
+
+.episodes-loading {
+  @apply text-gray-600 italic;
+}
+
+.episodes-error {
+  @apply text-red-600 font-semibold;
+}
+
+.episodes-container {
+  @apply flex flex-col gap-6;
+}
+
+
+/*  Layout de la página de episodios  */
+.episodes-main {
+  @apply container mx-auto p-6;
+}
+
+.episodes-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+/* Columna derecha:  se divide en 2 filas iguales */
+.episodes-right {
+  @apply grid grid-rows-2 gap-6 rounded-xl border p-4 h-screen;
+}
+
+/*  scroll  */
+.panel-scroll {
+  @apply overflow-y-auto;
+}
+
+/* Título del formulario */
+.form-title {
+  @apply text-xl font-bold mb-4;
+}
+
+
+/*  FavoritesList  */
+.favorites-section {
+  @apply flex flex-col gap-4;
+}
+
+.favorites-title {
+  @apply text-xl font-bold;
+}
+
+.favorites-container {
+  @apply flex flex-col gap-6;
+}
+
+/* Mensaje cuando no hay favoritos */
+.favorites-empty {
+  @apply text-gray-600 italic;
+}
+
